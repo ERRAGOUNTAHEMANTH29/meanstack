@@ -1,0 +1,25 @@
+.main-box{
+ display: grid;
+  
+  margin: auto;
+  grid-template-columns: repeat(4,1fr); 
+  cursor: pointer;
+}
+.image2{
+  grid-column: span 2;
+
+}
+.image1{
+  grid-row: span 2;
+}
+.image9{
+  grid-column: span 2;
+}
+
+.img{
+  transition: transform 0.3s ease;
+  
+}
+.img:hover{
+  transform: scale(1.1);
+}

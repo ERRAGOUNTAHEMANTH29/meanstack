@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    padding: 0;
+   
+  }
+
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding:  20px;
+   
+  }
+  
+  main {
+    margin: 10px;
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+ 
+    
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    cursor: pointer;
+  }
+  
+  .image {
+    overflow: hidden;
+   
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3 ease;
+  }
+  .image :hover{
+    transform: scale(1.5);
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px ;
+    position: fixed;
+bottom: 0;
+width: 100%;
+  }

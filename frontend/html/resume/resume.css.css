@@ -1,0 +1,23 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+   
+}
+
+header {
+    text-align: center;
+    background-color: rgb(161, 161, 161);
+    color: #4f3ea6;
+    padding: 5px;
+}
+
+
+.about, .experience, .education,.area_of_intrest {
+    padding: 0px;
+}
+
+h2 {
+    color: #952929;
+}
+
+
+

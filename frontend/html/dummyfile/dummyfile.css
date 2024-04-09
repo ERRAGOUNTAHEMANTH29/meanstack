@@ -1,0 +1,170 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://images7.alphacoders.com/731/731956.jpg);
+background-repeat:repeat-y ;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.hero {
+    text-align: center;
+}
+
+
+.about {
+    text-align: center;
+}
+
+
+#products {
+    text-align: center;
+    display: grid;
+grid-template-columns: repeat(4,300px);
+justify-content: center;
+    
+}
+
+.products{
+    text-align: center;
+
+}
+
+.product img {
+    /* width: 200px;
+    height: 200px; */
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+ 
+   
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(227, 17, 17);
+}
+
+
+.gallery {
+    text-align: center;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-height: 200px;
+   
+}
+
+
+
+.dummy {
+    text-align: center;
+}
+
+.dummy {
+    margin-bottom: 20px;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact input, .contact textarea, .contact button {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.contact button {
+    background-color: #ebc367;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px ;
+}
+p{
+    color: white;
+}
+h2{
+    color: rgb(232, 120, 56);
+}
+h3{
+    color: azure;
+}
+@media(max-width:800px){
+    .gallery-images{
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .gallery img {
+        width: 100%;
+        max-height: 200px;  
+    }
+    #products{
+        grid-template-columns: repeat(2,1fr); 
+        width: 100%;
+    }
+    }
+@media(max-width:400px){
+    .gallery-images{
+        grid-template-columns: repeat(1,1fr); }
+        .gallery img {
+            width: 100%;
+            max-height: 200px; 
+            justify-content: center; 
+        }
+        #products{
+            grid-template-columns: repeat(1,1fr);
+            width: 100%; 
+            justify-content: center;
+        }
+}

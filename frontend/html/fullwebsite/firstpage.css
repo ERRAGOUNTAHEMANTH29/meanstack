@@ -1,0 +1,68 @@
+ .main-container_1{ 
+    margin: 0%;
+    padding: 0%;
+}
+ul {
+    float: center;
+    display: flex;
+  justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+.first-main{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    
+}
+.button{
+    position: relative;
+    min-width: 150px;
+    height: 42px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #252525;
+    border: 1px solid #252525;
+    border-radius: 60px;
+   
+}
+ .HOME:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.PAGES:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.PORTFOLIO:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+
+.SERVICES:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+
+.ABOUTUS:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.BLOG:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.CONTACT:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+
+
+
+

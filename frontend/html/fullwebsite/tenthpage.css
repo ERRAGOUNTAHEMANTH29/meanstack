@@ -1,0 +1,41 @@
+.tenth_first{
+    opacity: 1;
+    /* font-size: 94px; */
+    font-size: small;
+    line-height: 1.2;
+    color: #6e6e6e;
+    /* border: 1px solid black; */
+    height: auto;
+    width: 380px;
+    font-size: 20px;
+    /* font-weight: 200;*/
+}
+.tenth_second{
+opacity: 1;
+/* font-size: 94px; */
+font-size: small;
+line-height: 1.2;
+color: #6e6e6e;
+/* border: 1px solid black; */
+height: auto;
+width: 380px;
+font-size: 20px;
+/* font-weight: 200;*/}
+.tenth_third{
+opacity: 1;
+/* font-size: 94px; */
+font-size: small;
+line-height: 1.2;
+color: #6e6e6e;
+/* border: 1px solid black; */
+height: auto;
+width: 380px;
+font-size: 20px;
+/* font-weight: 200;*/}
+.tenth_main{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;}
+ 

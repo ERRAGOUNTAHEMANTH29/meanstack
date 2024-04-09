@@ -1,0 +1,93 @@
+.nine_page{  
+    width: 100%;
+    height: 500px;
+    background-color: #f6f9f9;
+    border: none;
+
+}
+
+.image_nine_page{position: relative;
+left: 770px;}
+
+.header_content_nine > h2{
+    max-width: 400px;
+    font-family: "Playfair Display", serif;
+    color: #252525;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 48px;
+    left: 10%;
+    position: relative;
+    margin-top: -30%;
+}
+.paragraph_content_nine > p{
+    position: relative;
+line-height: 1.7;
+color: #6e6e6e;
+left: 10%;
+font-size: 20px;
+max-width: 480px;
+font-weight: 400;}
+.nine_button_1{
+    cursor: pointer;
+    /* border-color: #bca858; */
+    /* background-color: #bca858; */
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    position: relative;
+    /* z-index: 1; */
+    min-width: 200px;
+    /* height: 42px; */
+    line-height: 40px;
+    font-size: 14px;
+    /* font-weight: 400; */
+    /* display: inline-block; */
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffc107;
+    color: #252525;
+    border: none;
+     border: 1px solid #969494; 
+    border-radius: 60px;
+  
+}
+.nine_button_2{
+    cursor: pointer;
+    /* border-color: #bca858; */
+    /* background-color: #bca858; */
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    position: relative;
+    /* z-index: 1; */
+    min-width: 140px;
+    /* height: 42px; */
+    line-height: 40px;
+    font-size: 14px;
+    /* font-weight: 400; */
+    /* display: inline-block; */
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #252525;
+    border: none;
+     border: 1px solid #969494; 
+    border-radius: 60px;}
+    .nine_button_main{
+        display: flex;
+        position: relative;
+        /* line-height: 1.7; */
+        /* color: #6e6e6e; */
+        left: 10%;
+        gap: 20px;
+    }
+    .nine_button_1:hover{
+        color: #f6f9f9;
+        background-color: #252525;
+    }
+    .nine_button_2:hover{
+        color:white;
+        background-color:#ffc107 ;
+    }
+   

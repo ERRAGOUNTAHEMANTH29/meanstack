@@ -1,0 +1,43 @@
+.main{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.dummy{
+ border: 5px solid rgb(17, 16, 16);
+ height: 400px;
+ width: 400px;
+ background-image: repeating-conic-gradient(red 10%, rgb(47, 0, 255) 20%);
+}
+.dummy1{
+    border: 5px solid rgb(17, 16, 16);
+    height: 400px;
+    width: 400px;
+    background-image: repeating-linear-gradient(rgb(139, 182, 51), rgb(125, 125, 115) 10%, rgb(128, 0, 55) 20%)}
+    .dummy2{
+        border: 5px solid rgb(17, 16, 16);
+        height: 400px;
+        width: 400px;background-image: linear-gradient(rgb(78, 54, 54),aqua, blue);
+        }
+        .dummy3{
+            border: 5px solid rgb(17, 16, 16);
+            height: 400px;
+            width: 400px;
+            background-image: radial-gradient(red, rgb(135, 137, 15), rgb(57, 41, 41));}
+            .dummy4{
+                border: 5px solid rgb(17, 16, 16);
+                height: 400px;
+                width: 400px;
+                background-image: url('../images/img.jpg');
+            background-repeat: no-repeat;}
+                .dummy5{
+                    border: 5px solid rgb(17, 16, 16);
+                    height: 400px;
+                    width: 400px;
+                    background-image: conic-gradient(red, yellow, green);
+                }
+                    .dummy6{
+                        border: 5px solid rgb(17, 16, 16);
+                        height: 400px;
+                        width: 400px;
+                        background-image: repeating-radial-gradient(red, yellow 30%, green 20%);}

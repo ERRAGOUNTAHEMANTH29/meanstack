@@ -1,0 +1,62 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* html,body {
+  
+    width: 420px;
+    height: 700px;
+} */
+body{
+    /* background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    background-image: url('../images/background.jpeg');
+}
+
+.dummy{
+  display: flex; 
+  flex-wrap: wrap;
+
+    }
+   
+
+.first-box,.second-box,.third-box,.fourth-box,.fifth-box{
+  
+    background-color: rgb(71, 100, 119);
+    margin: 15px;
+    padding: 10px;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    border-radius: 15px;
+    border-color: rgb(0, 255, 94);
+ border-style: dotted;
+
+}
+.first-box:hover,
+.second-box:hover,
+.third-box:hover,
+.fourth-box:hover,
+.fifth-box:hover
+{
+background-color: rgba(178, 94, 25, 0.314);
+
+}
+h3{
+    text-decoration: underline;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 0 0 .6rem 0;
+}
+.first-box p,
+.second-box p,
+.third-box p,
+.fourth-box p,
+.fifth-box p
+{
+line-height: 1.6;
+padding: 10px;
+}

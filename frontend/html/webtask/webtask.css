@@ -1,0 +1,23 @@
+#sub-btn{
+    color: rgb(244, 242, 242);
+    background-color: rgba(35, 172, 14, 0.835);
+    padding: 10px;
+    border-color: #f6f6f6;
+}
+div {
+    border:2px solid #f6f6f6; 
+    padding: 10px; 
+    margin: auto; 
+    width: 40%;
+}
+.example{
+    color: green;
+}
+
+
+.arrow{
+
+    font-size: 30px;
+ 
+
+  }

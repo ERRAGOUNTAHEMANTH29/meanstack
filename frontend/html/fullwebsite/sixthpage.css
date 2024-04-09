@@ -1,0 +1,128 @@
+.sixth-heading-top {
+  font-size: 36px;
+  text-align: center;
+}
+.sixth-paragraph {
+  line-height: 1.7;
+  color: #6e6e6e;
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sixth-heading {
+  text-align: center;
+}
+.portfolio-menu-task {
+  display: flex;
+ flex-wrap: wrap;
+}
+ul {
+  float: center;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+}
+.All:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.Haircut:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.PORTFOLIO:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+
+.DYE:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+
+.Shave:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.Hairstyle:hover{
+    cursor: pointer;
+    color:goldenrod ;
+}
+.images-sixth{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+padding-top: 40px;
+
+
+  
+}
+.sixthimage2{
+  grid-row: span 2;
+
+}
+.buttonSIXTH{
+ width: 155px;
+  height: 42px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #252525;
+  border: 1px solid #252525;
+  border-radius: 60px;
+}
+.buttonSIXTH:hover{
+    cursor: pointer;
+    background-color:goldenrod ;
+    color:white ;
+}
+.main-container-6{
+  width: 65%;
+  height: 1000px;
+  border: none;
+  margin: auto;
+  
+}
+.inner-main-con-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2{
+  grid-row:span 2;
+}
+.box1:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+opacity: 0.5;
+
+}
+.box2:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.box3:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.box4:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.box5:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+
+
+
+

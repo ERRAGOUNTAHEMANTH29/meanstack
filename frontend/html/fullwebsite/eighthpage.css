@@ -1,0 +1,55 @@
+.eight_main{
+    border: none;
+    width: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+   
+}
+.eight_heading{
+    font-size: 42px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.eight_paragraph{
+    text-align: center; 
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.images_eight{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif; 
+}
+p{
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 400;
+}
+.firstcontent_eight,
+.secondcontent_eight,
+.thirdcontent_eight
+{
+ max-width: 300px;
+}
+.hoveringtext2:hover{
+    cursor: pointer;
+    color: goldenrod;
+}
+.hoveringtext3:hover{
+    color: goldenrod;cursor: pointer;
+}
+.hoveringtext1:hover{
+    color: goldenrod;cursor: pointer;
+}
