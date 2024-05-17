@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head charset="utf-8">
+    <title>CALL BACK FUNCTION</title>
+</head>
+
+<body>
+    <script>
+        function addition(x, y, additioncallback) {
+            additioncallback(x + y);
+        }
+        function displayResult1(result1) {
+            console.log("Result of addition: " + result1);
+        }
+        addition(5, 3, displayResult1);
+
+        function subtraction(x, y, subtractioncallback) {
+            subtractioncallback(x - y);
+        }
+        function displayResult2(result2) {
+            console.log("Result of subtraction: " + result2);
+        }
+        subtraction(19, 8, displayResult2);
+
+        function multiplication(x, y, multiplicationcallback) {
+            multiplicationcallback(x * y);
+        }
+        function displayResult3(result3) {
+            console.log("Result of multiplication: " + result3);
+        }
+        multiplication(19, 1, displayResult3);
+
+        function division(x, y, divisioncallback) {
+            divisioncallback(x / y);
+        }
+        function displayResult4(result4) {
+            console.log("Result of division: " + result4);
+        }
+        division(18, 5, displayResult3);
+
+
+
+
+    </script>
+</body>
+
+</html>
