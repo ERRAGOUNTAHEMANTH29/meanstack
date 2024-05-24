@@ -145,6 +145,8 @@
 // }).listen(3000) ;
 const express = require('express')
 var app = express()
+const router=require(".sample_node/src/router/router.js")
+app.use('/user',router)
 const db = require('./sample_node/src/database/db.js')
 db.on("open",()=>{
     app.listen(5000,()=>{
