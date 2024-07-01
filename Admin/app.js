@@ -11,6 +11,7 @@ const nodemailerrouter =require("./src/Router/nodemailerrouter");
 const bodyParser = require("body-parser");
 const jwttokens = require("./src/Router/jwttokenrouter");
 
+
 app.use(bodyParser.json());
 app.use("/User",Router);
 app.use("/product",productrouter);
