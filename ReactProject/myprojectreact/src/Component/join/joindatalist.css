@@ -1,0 +1,59 @@
+.join{
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-image: url(../images/jobsearch);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--whiteColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-between; 
+     padding: 1rem 3rem;
+    align-items: center;
+    position: relative;
+}
+.join::before{
+    content: "";
+    position: absolute;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+     background: linear-gradient(180deg, rgba(36, 82, 131, 0.6)0% ,rgba(0,122,255,0.5)100%),
+linear-gradient(180deg ,rgba(0,122,255,0.5), transparent 100%);
+z-index: 1; 
+ }  
+.join-details{
+    min-width: 280px;
+    width: 50%;
+    z-index: 2;
+    margin-bottom: 1rem;
+    
+}
+
+.join-details > h1{
+font-size:36px ;
+letter-spacing: 2;
+/* line-height: 1; */
+}
+.join-button{
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    color: var(--blackcolor);
+    background-color: var(--yellowvolor);
+    box-shadow: rgba(0, 0, 0, 0.35 )0px 5px 15px;
+    z-index: 2;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.join-button:hover{
+    background: transparent;
+    border: 2px solid var(--yellowvolor);
+    color: var(--yellowvolor);
+
+}

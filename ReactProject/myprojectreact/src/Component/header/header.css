@@ -1,0 +1,23 @@
+header{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-title{
+    
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+    letter-spacing: 3;
+    font-weight: bolder;
+    font-size: 52px;
+    color: black;
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0 );
+}
+
+.header-title> span{
+color: var(--primaryColor);
+}

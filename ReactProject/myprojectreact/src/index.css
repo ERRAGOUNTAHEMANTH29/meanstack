@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  --primaryColor:#0076de;
+  --whiteColor:#fff;
+  --blackcolor:#333;
+  --greycolor:#f6f8fa;
+  --yellowvolor:#ffd723;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Nunito',sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+
+
+
+
+/* mediaquerry */
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+  }
+
+  .navbar-menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 36px;
+  }
+
+  .search-box {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+
+  .search-card {
+    width: auto;
+  }
+
+  .search-input {
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .search-buttons {
+    font-size: 16px;
+  }
+
+  .filter-select {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .filter-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-card {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .search-buttons {
+    font-size: 14px;
+  }
+
+  .filter-select {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .filter-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .search-buttons {
+    font-size: 12px;
+  }
+
+  .filter-select {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .filter-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 16px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-card {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .search-input {
+    width: 80%;
+    font-size: 10px;
+  }
+
+  .search-buttons {
+    font-size: 10px;
+  }
+
+  .filter-select {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .filter-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 100px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 12px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-card {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .search-input {
+    width: 80%;
+    font-size: 10px;
+  }
+
+  .search-buttons {
+    font-size: 10px;
+  }
+
+  .filter-select {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .filter-box {
+    flex-direction: column;
+  }
+}
