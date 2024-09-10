@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for Sarvapriya</title>
+    <style>
+        body {
+            background-color: #ffcccb;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #ff0044;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            padding: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 2px solid #ff0044;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #ff0044;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #ff6699;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px;
+        }
+        .fade-in-slide-up {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInSlideUp 2s forwards;
+        }
+        @keyframes fadeInSlideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .sad-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://emoji.slack-edge.com/T0D8H82F4/sad_emojies/sad_emojies.png') repeat;
+            z-index: -1;
+        }
+        .emoji-button {
+            display: inline-block;
+            background: #ff0044;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .no-option-message {
+            font-size: 24px;
+            color: #ff0044;
+            margin-top: 20px;
+        }
+        .heart-rain, .kiss-rain, .crying-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .heart, .kiss, .crying {
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+        .love-message-container {
+    position: relative;
+    padding: 20px;
+}
+
+.love-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff0044;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ff0c4d, #f187aa, #ff99cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.bounce-in {
+    animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Hello, Sarvapriya!</h1>
+        <p>Please confirm your details to proceed:</p>
+        <form onsubmit="checkDetails(event)">
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <input type="number" id="phone" placeholder="Enter your number" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>Do you love me?</h1>
+        <button onclick="showLove()">Yes</button>
+        <button onclick="showNo()">No</button>
+    </div>
+
+    <div class="hidden" id="sadBackground" class="sad-background"></div>
+
+    <div class="container hidden" id="loveMessage">
+        <div class="love-message-container bounce-in">
+            <img src="https://media1.tenor.com/m/Kq_8_OKYASIAAAAd/hug-bear.gif" alt="Teddy Bears">
+            <h2 class="love-message">😘😘😘❤️❤️❤️❤️ I love you darling! 😘😘❤️❤️❤️❤️</h2>
+        </div>
+    </div>
+    
+
+    <div class="container hidden" id="noMessage">
+        <div class="no-option-message">No is not an option for you; the only option is Yes.</div>
+        <button class="emoji-button" onclick="showLove()">Yes</button>
+    </div>
+
+    <!-- Emoji Rain Containers -->
+    <div class="heart-rain hidden" id="heartRain"></div>
+    <div class="kiss-rain hidden" id="kissRain"></div>
+    <div class="crying-rain hidden" id="cryingRain"></div>
+
+    <script>
+        function checkDetails(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+
+            if (name === 'Sarvapriya' && phone === '8807489525') {
+                document.getElementById('page1').classList.add('hidden');
+                document.getElementById('page2').classList.remove('hidden');
+            } else {
+                alert('Details are incorrect. Please try again!');
+            }
+        }
+
+        function showLove() {
+            document.getElementById('page2').classList.add('hidden');
+            document.getElementById('noMessage').classList.add('hidden');
+            document.getElementById('sadBackground').classList.add('hidden');
+            document.getElementById('loveMessage').classList.remove('hidden');
+            startHeartRain();
+            startKissRain();
+            stopCryingRain(); // Ensure crying emoji rain is stopped
+        }
+
+        function showNo() {
+            document.getElementById('page2').classList.add('hidden');
+            document.getElementById('sadBackground').classList.remove('hidden');
+            document.getElementById('noMessage').classList.remove('hidden');
+            stopHeartRain(); // Ensure heart rain is stopped
+            stopKissRain();  // Ensure kiss rain is stopped
+            startCryingRain();
+        }
+
+        function startHeartRain() {
+            const heartRain = document.getElementById('heartRain');
+            heartRain.innerHTML = ''; // Clear any existing hearts
+            heartRain.classList.remove('hidden');
+            for (let i = 0; i < 100; i++) { // Create 100 hearts
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.textContent = '❤️'; // Heart emoji
+                heart.style.left = `${Math.random() * 100}vw`;
+                heart.style.animationDuration = `${Math.random() * 2 + 3}s`; // Random duration
+                heart.style.fontSize = `${Math.random() * 20 + 20}px`; // Random size
+                heartRain.appendChild(heart);
+            }
+        }
+
+        function startKissRain() {
+            const kissRain = document.getElementById('kissRain');
+            kissRain.innerHTML = ''; // Clear any existing kisses
+            kissRain.classList.remove('hidden');
+            for (let i = 0; i < 100; i++) { // Create 100 kisses
+                const kiss = document.createElement('div');
+                kiss.className = 'kiss';
+                kiss.textContent = '😘'; // Kiss emoji
+                kiss.style.left = `${Math.random() * 100}vw`;
+                kiss.style.animationDuration = `${Math.random() * 2 + 3}s`; // Random duration
+                kiss.style.fontSize = `${Math.random() * 20 + 20}px`; // Random size
+                kissRain.appendChild(kiss);
+            }
+        }
+
+        function startCryingRain() {
+            const cryingRain = document.getElementById('cryingRain');
+            cryingRain.innerHTML = ''; // Clear any existing crying emojis
+            cryingRain.classList.remove('hidden');
+            for (let i = 0; i < 100; i++) { // Create 100 crying emojis
+                const crying = document.createElement('div');
+                crying.className = 'crying';
+                crying.textContent = '😭'; // Crying emoji
+                crying.style.left = `${Math.random() * 100}vw`;
+                crying.style.animationDuration = `${Math.random() * 2 + 3}s`; // Random duration
+                crying.style.fontSize = `${Math.random() * 20 + 20}px`; // Random size
+                cryingRain.appendChild(crying);
+            }
+        }
+
+        function stopHeartRain() {
+            document.getElementById('heartRain').innerHTML = ''; // Clear the hearts
+            document.getElementById('heartRain').classList.add('hidden');
+        }
+
+        function stopKissRain() {
+            document.getElementById('kissRain').innerHTML = ''; // Clear the kisses
+            document.getElementById('kissRain').classList.add('hidden');
+        }
+
+        function stopCryingRain() {
+            document.getElementById('cryingRain').innerHTML = ''; // Clear the crying emojis
+            document.getElementById('cryingRain').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
